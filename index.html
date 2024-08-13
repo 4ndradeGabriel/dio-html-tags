@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéria sobre HTML e Suas Tags</title>
+</head>
+<body>
+
+    <h1>Matéria sobre HTML e Suas Tags</h1>
+
+    <h2>Sumário</h2>
+    <ul>
+        <li><a href="#html-o-que-e">O que é HTML e como surgiu?</a></li>
+        <li><a href="#tags-texto">Tags para Texto</a></li>
+        <li><a href="#tags-multimidia">Tags para Multimídia</a></li>
+        <li><a href="#seletores-html">Seletores HTML</a></li>
+        <li><a href="#tags-semanticas">Tags Semânticas</a></li>
+        <li><a href="#formularios-html">Formulários em HTML</a></li>
+        <li><a href="#links-navegacao">Links e Navegação</a></li>
+        <li><a href="#tabelas-html">Tabelas em HTML</a></li>
+        <li><a href="#elementos-interativos">Elementos Interativos</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+
+    <h2 id="html-o-que-e">O que é HTML e como surgiu?</h2>
+    <p>HTML (HyperText Markup Language) é a linguagem padrão utilizada para criar páginas na web. Surgiu em 1991, desenvolvido por Tim Berners-Lee, para estruturar documentos na internet através de hipertextos, links que conectam diferentes páginas. HTML é essencialmente o esqueleto de uma página web, definindo sua estrutura e conteúdo.</p>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="tags-texto">Tags para Texto</h2>
+    <p>HTML possui várias tags para a formatação de texto. Algumas das mais comuns são:</p>
+    <ul>
+        <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong>: Usadas para títulos, onde &lt;h1&gt; é o título principal e &lt;h6&gt; o menos importante.</li>
+        <li><strong>&lt;p&gt;</strong>: Define um parágrafo.</li>
+        <li><strong>&lt;strong&gt;</strong> e <strong>&lt;em&gt;</strong>: Respectivamente, deixam o texto em negrito e em itálico.</li>
+        <li><strong>&lt;blockquote&gt;</strong>: Utilizado para citar blocos de texto de outras fontes.</li>
+        <li><strong>&lt;ul&gt;, &lt;ol&gt; e &lt;li&gt;</strong>: Usadas para criar listas, sendo &lt;ul&gt; para listas não ordenadas (com marcadores) e &lt;ol&gt; para listas ordenadas (numeradas). Os itens da lista são definidos com &lt;li&gt;.</li>
+        <li><strong>&lt;br&gt;</strong>: Insere uma quebra de linha dentro de um parágrafo ou texto.</li>
+        <li><strong>&lt;pre&gt;</strong>: Mantém a formatação de texto e espaços em branco, exibindo o conteúdo exatamente como está no código fonte.</li>
+        <li><strong>&lt;code&gt;</strong>: Utilizado para exibir trechos de código em uma fonte monoespaçada.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="tags-multimidia">Tags para Multimídia</h2>
+    <p>HTML também permite a inserção de conteúdo multimídia como imagens, vídeos e áudios:</p>
+    <ul>
+        <li><strong>&lt;img&gt;</strong>: Insere imagens na página. Atributos importantes incluem <em>src</em> (fonte da imagem) e <em>alt</em> (texto alternativo).</li>
+        <li><strong>&lt;video&gt;</strong>: Insere vídeos, podendo incluir controles como play, pause e volume. É possível especificar múltiplas fontes para compatibilidade com diferentes navegadores.</li>
+        <li><strong>&lt;audio&gt;</strong>: Insere áudios com opções de controle semelhantes ao vídeo, e também pode ter múltiplas fontes.</li>
+        <li><strong>&lt;iframe&gt;</strong>: Permite a inserção de um conteúdo de outra página da web, como vídeos do YouTube ou mapas do Google.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="seletores-html">Seletores HTML</h2>
+    <p>Seletores HTML ajudam a identificar e manipular elementos específicos na página. Alguns exemplos:</p>
+    <ul>
+        <li><strong>ID</strong>: Identifica um único elemento com o atributo <strong>id</strong>, usando &lt;div id="exemplo"&gt;. IDs devem ser únicos em uma página.</li>
+        <li><strong>Classes</strong>: Identificam múltiplos elementos com o atributo <strong>class</strong>, usando &lt;div class="exemplo"&gt;. Classes podem ser reutilizadas em vários elementos.</li>
+        <li><strong>Elementos</strong>: Podem ser selecionados diretamente pelo nome da tag, como &lt;p&gt; para parágrafos.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="tags-semanticas">Tags Semânticas</h2>
+    <p>Tags semânticas em HTML ajudam a dar significado ao conteúdo, facilitando a compreensão para desenvolvedores e máquinas:</p>
+    <ul>
+        <li><strong>&lt;header&gt;</strong>: Define o cabeçalho da página ou de uma seção, geralmente incluindo o logotipo, título, e navegação principal.</li>
+        <li><strong>&lt;nav&gt;</strong>: Especifica uma seção de links de navegação.</li>
+        <li><strong>&lt;article&gt;</strong>: Indica um conteúdo independente e auto-suficiente, como uma postagem de blog ou uma notícia.</li>
+        <li><strong>&lt;section&gt;</strong>: Define uma seção genérica dentro de um documento, geralmente com um tema relacionado.</li>
+        <li><strong>&lt;aside&gt;</strong>: Representa um conteúdo lateral, como uma barra lateral ou caixas de informação.</li>
+        <li><strong>&lt;footer&gt;</strong>: Representa o rodapé do documento ou de uma seção, geralmente contendo informações sobre o autor, links para documentos relacionados, e a declaração de direitos autorais.</li>
+        <li><strong>&lt;main&gt;</strong>: Delimita o conteúdo principal da página, excluindo conteúdos repetidos em múltiplas páginas, como barras laterais, rodapés e cabeçalhos.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="formularios-html">Formulários em HTML</h2>
+    <p>Formulários são fundamentais para a interação do usuário com o site. As principais tags incluem:</p>
+    <ul>
+        <li><strong>&lt;form&gt;</strong>: Contém todos os elementos de um formulário e define como os dados são enviados.</li>
+        <li><strong>&lt;input&gt;</strong>: Utilizado para campos de entrada de dados, com diversos tipos, como texto, senha, email, número, entre outros.</li>
+        <li><strong>&lt;textarea&gt;</strong>: Define uma área de texto para entradas longas.</li>
+        <li><strong>&lt;button&gt;</strong>: Cria um botão que pode ser usado para enviar o formulário ou realizar ações personalizadas.</li>
+        <li><strong>&lt;label&gt;</strong>: Associa um rótulo a um elemento de formulário, melhorando a acessibilidade.</li>
+        <li><strong>&lt;select&gt;</strong> e <strong>&lt;option&gt;</strong>: Criam listas suspensas para seleção de uma ou mais opções.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="links-navegacao">Links e Navegação</h2>
+    <p>Os links são a base da navegação na web. As tags mais comuns incluem:</p>
+    <ul>
+        <li><strong>&lt;a&gt;</strong>: Define um link. O atributo <em>href</em> especifica o destino, que pode ser uma URL, um link para um arquivo ou um link âncora dentro da mesma página.</li>
+        <li><strong>&lt;nav&gt;</strong>: Usada para agrupar um conjunto de links de navegação.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="tabelas-html">Tabelas em HTML</h2>
+    <p>Tabelas são usadas para organizar dados em linhas e colunas. As principais tags são:</p>
+    <ul>
+        <li><strong>&lt;table&gt;</strong>: Contém toda a tabela.</li>
+        <li><strong>&lt;tr&gt;</strong>: Define uma linha na tabela.</li>
+        <li><strong>&lt;td&gt;</strong>: Define uma célula em uma linha, ou seja, o conteúdo da tabela.</li>
+        <li><strong>&lt;th&gt;</strong>: Define um cabeçalho de uma coluna ou linha, destacando-o do resto.</li>
+        <li><strong>&lt;thead&gt;</strong>: Agrupa os cabeçalhos da tabela.</li>
+        <li><strong>&lt;tbody&gt;</strong>: Agrupa o corpo principal da tabela.</li>
+        <li><strong>&lt;tfoot&gt;</strong>: Agrupa o rodapé da tabela, geralmente usado para somas ou resumos.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="elementos-interativos">Elementos Interativos</h2>
+    <p>HTML também suporta elementos interativos que podem melhorar a experiência do usuário:</p>
+    <ul>
+        <li><strong>&lt;details&gt;</strong>: Cria um widget que o usuário pode abrir ou fechar para revelar informações adicionais.</li>
+        <li><strong>&lt;summary&gt;</strong>: Define um resumo ou legenda para o elemento &lt;details&gt;.</li>
+        <li><strong>&lt;dialog&gt;</strong>: Cria uma janela de diálogo interativa que pode ser usada para mensagens, formulários ou interações com o usuário.</li>
+        <li><strong>&lt;progress&gt;</strong>: Mostra o progresso de uma tarefa, como um carregamento de arquivo.</li>
+        <li><strong>&lt;meter&gt;</strong>: Representa uma medida em um intervalo conhecido, como um indicador de volume.</li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="conclusao">Conclusão</h2>
+    <p>HTML é a espinha dorsal de qualquer página web. Compreender as diferentes tags e como usá-las permite criar estruturas web ricas e bem organizadas. À medida que a web evolui, novas tags e funcionalidades são adicionadas, mantendo o HTML uma ferramenta essencial para desenvolvedores.</p>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+    <h2 id="referencias">Referências</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard - WHATWG</a></li>
+        <li><a href="https://html.com/" target="_blank">HTML.com - Your One-Stop HTML Guide</a></li>
+        <li><a href="https://www.freecodecamp.org/news/html-crash-course/" target="_blank">FreeCodeCamp - HTML Crash Course</a></li>
+    </ul>
+    <p><a href="#sumario">Voltar ao Sumário</a></p>
+
+</body>
+</html>
